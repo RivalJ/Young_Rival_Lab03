@@ -1,0 +1,49 @@
+IT 2045C Computer Programming II
+Prof. Tom Wulf
+Fall 2024 v1
+Lab 03 Filter Interface
+20 Points
+Learning Goals:
+
+
+Get practice using Interfaces
+Create a predicate based interface
+Create a call back interface
+Create UML diagrams with Interfaces
+Lab Directions:
+1.	Create an IntelliJ project called Interfaces. All of your code will be in this project.
+Add your project to GitHub source control.
+2.	Create a callback interface Filter as follows:
+
+public interface Filter
+{
+   boolean accept(Object x);
+}
+
+
+Program 1:
+
+Provide a class ShortWordFilter which implements the Filter interface whose accept method accepts all strings of length < 5.
+
+Then write a java main program ShortLister.java that lets the user pick a text file (JFileChooser) which uses the filter to display the short words from the file.
+
+
+
+Program 2:
+
+Provide a class BigRectangleFilter which implements the Filter interface whose accept method accepts all java Rectangle objects that have a perimeter > 10. Rectangle is an existing java class, so use it do not create your own!
+
+Then write a program BigRectLister.java that creates an ArrayList of 10 Rectangles making sure that you have several that are under and several that are over a perimeter of 10. List the rectangles that have big perimeters.
+
+As always take screen shots of your output to show that your programs run correctly. Paste them at the end of this document.  Make sure it is clear from the screen shots that your filters worked correctly.
+UML:
+
+Create UML diagrams that show the relationships between these classes. HERE:
+
+
+Submission:
+
+Save this file with your required screen shots as  Lastname_Firstname_Lab03.docx using you name. Submit it.
+Submit the GitHub link(s) for your project source.
+COPY IT HERE:
+
