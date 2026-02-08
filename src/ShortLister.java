@@ -12,6 +12,7 @@ public class ShortLister {
     String rec = "";
     ArrayList<String> lines = new ArrayList<>();
     ArrayList<String> filteredLines = new ArrayList<>();
+    ShortWordFilter filter = new ShortWordFilter();
 
     void main(String[] args){
         GetFileFromUser();
@@ -20,7 +21,6 @@ public class ShortLister {
     }
 
     void PrintFilteredList(){
-        ShortWordFilter filter = new ShortWordFilter();
         for(String s: lines){//for each line in the file
             String[] Row = s.split(" ");
             for(String word: Row){//for each word in each line
